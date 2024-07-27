@@ -10,17 +10,17 @@
 <body>
     <div class="container">
         <div class="search-box">
-            <i class='bx bxs-map'></i>
+            <button class="bx bxs-map live-location"></button>
             <input type="search" placeholder="enter your location">
-            <button class="bx bx-search"></button>
+            <button class="bx bx-search city-search" id="search-btn"></button>
         </div>
 
         <div class="date-country">
             <div class="date">
-                <p>02/02/2024</p>
+                <p></p>
             </div>
             <div class="country">
-                <p>Pakistan</p>
+                <p></p>
             </div>
         </div>
 
@@ -56,6 +56,13 @@
                 </div>
             </div>
         </div>
+        <div class="not-found">
+            <div class="box">
+                <img src="./Assets/images/404.png">
+                <p>Oops! Location not found.</p>
+            </div>
+        </div>
+
     </div>
     <script src="app.js"></script>
 </body>

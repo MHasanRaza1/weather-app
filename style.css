@@ -20,7 +20,7 @@ body{
 .container{
     position: relative;
     width: 400px;
-    height: 555px;
+    height: 100px;
     background: rgba(255,255,255,.1);
     backdrop-filter: blur(30px);
     border: 2px solid reba(255,255,255,.2);
@@ -38,10 +38,18 @@ body{
     border-radius: 10px;
 }
 
-.search-box i{
+.search-box .live-location{
     position: absolute;
-    left: 10px;
+    left: 0;
+    width: 40px;
+    height: 100%;
     font-size: 1.75rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
 }
 
 .search-box input{
@@ -64,7 +72,7 @@ body{
     text-transform: capitalize;
 }
 
-.search-box button{
+.search-box .city-search{
     position: absolute;
     right: 0;
     width: 40px;
@@ -89,6 +97,20 @@ body{
 .weather-box{
     text-align: center;
     margin: 30px 0;
+}
+
+.weather-box,
+.weather-details,
+.date-country,
+.not-found{
+    visibility: hidden;
+}
+
+.weather-box.active,
+.weather-details.active,
+.date-country.active,
+.not-found.active{
+    visibility: visible;
 }
 
 .weather-box img{
@@ -156,4 +178,23 @@ body{
 .weather-box p{
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+.not-found{
+    position: absolute;
+    top: 0;
+    margin-top: 110px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.not-found img{
+    width: 65%;
+}
+
+.not-found p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
 }
