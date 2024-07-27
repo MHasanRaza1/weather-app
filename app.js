@@ -1,5 +1,5 @@
 let container = document.querySelector('.container');
-let search = document.querySelector('.search-box button');
+let search = document.querySelector('.search-box .city-search');
 let cityName = document.querySelector('.search-box input');
 const APIKey = 'ccbd3d2dc12aa6e020572ac8a8aad158';
 let weatherBox = document.querySelector('.weather-box');
